@@ -28,8 +28,6 @@ app.use(express.static(path.join(__dirname, "public")));
 //   res.sendFile(path.join(__dirname, "public", "login.html"));
 // });
 
-
-
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "home.html"));
 });
@@ -39,8 +37,6 @@ app.get("/signup", (req, res) => {
 app.get("/login", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "login.html"));
 });
-
-
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () =>
